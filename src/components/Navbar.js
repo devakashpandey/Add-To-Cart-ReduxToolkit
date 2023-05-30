@@ -5,11 +5,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useSelector } from "react-redux";
-import { getItemSelector } from "../redux/slices/CartSlice";
+// import { getItemSelector } from "../redux/slices/CartSlice";
 
 const Navbar = () => {
   // const items = useSelector((state) => state);  // old rdux feature
-  const items = useSelector(getItemSelector); // redux toolkit feature
+  const items = useSelector((state) => state.cart); // redux toolkit feature
   const total = items.reduce((a, b) => a + b.price, 0); // for calclulating total
   return (
     <div>

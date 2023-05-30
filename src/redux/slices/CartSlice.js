@@ -1,6 +1,6 @@
 // redux toolkit me hum har ek feature ke lie ek "slice" banate hai
 
-import { createSlice, createSelector } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
   name: "Cart",
@@ -13,12 +13,5 @@ const cartSlice = createSlice({
   },
 });
 
-// redux toolkit feature
-export const getItemSelector = createSelector(
-  (state) => state.cart, // this csart is from store
-  (state) => state
-);
-
-export const { addItem } = cartSlice.actions;
-
 export default cartSlice.reducer;
+export const { addItem } = cartSlice.actions;

@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit"; // replace with createStore
-import myCartReducer from "./slices/CartSlice"; // we give any name to this hook
+import cartSlice from "./slices/CartSlice";
 
 export const store = configureStore({
   reducer: {
     // here we store all the reducers
-    cart: myCartReducer,
+    cart: cartSlice,
   },
 });
