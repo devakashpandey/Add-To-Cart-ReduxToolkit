@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit"; // replace with createStore
+import { configureStore } from "@reduxjs/toolkit"; // replaced with createStore
 import cartSlice from "./slices/CartSlice";
 
 export const store = configureStore({

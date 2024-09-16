@@ -49,7 +49,7 @@ const Home = () => {
                         variant="contained"
                         size="small"
                         onClick={
-                          (e) => dispatch(addItem({ price: price })) // we pass the payload in additem
+                          (e) => dispatch(addItem(product)) // we pass the payload in additem
                         }
                       >
                         add to cart
